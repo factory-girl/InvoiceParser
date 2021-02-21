@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_182413) do
+ActiveRecord::Schema.define(version: 2021_02_21_171752) do
 
   create_table "documents", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_182413) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email"
-    t.string "vendor"
+    t.string "file"
   end
 
 end
