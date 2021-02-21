@@ -10,18 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_21_171752) do
+ActiveRecord::Schema.define(version: 2021_02_21_192645) do
 
   create_table "documents", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "upload_id"
+    t.string "vendor"
+    t.string "invoice_date"
+    t.string "amount"
+    t.string "amount_due"
+    t.string "currency"
+    t.string "tax"
   end
 
   create_table "uploads", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email"
-    t.string "file"
+    t.string "invoice"
   end
 
 end
