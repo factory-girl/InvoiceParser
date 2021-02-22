@@ -23,7 +23,9 @@ Ruby 2.6.6p146
 Rails 6.1.2.1
 
 ## Testing
-You can run the Uploads controller specs with: `rails test test/controllers/uploads_controller.rb` although there's an intermittent bug where running the entire suite generates a locked db error. You can specify an individual test by specifying a line number: `rails test test/controllers/uploads_controller.rb:4`
+Before testing, you will need to run the migrations on the test DB: `rails db:migrate RAILS_ENV="test"`
+
+You can run the Uploads controller specs with: `rails test test/controllers/uploads_controller.rb`
 
 You can run the Documents controller spcs with: `rails test test/controllers/documents_controller_test.rb`
 
