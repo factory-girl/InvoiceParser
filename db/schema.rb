@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2021_02_21_192645) do
   create_table "documents", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "upload_id"
+    t.integer "upload_id"
     t.string "vendor"
     t.string "invoice_date"
     t.string "amount"

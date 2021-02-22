@@ -1,6 +1,6 @@
 class AddColumnsToDocuments < ActiveRecord::Migration[6.1]
   def change
-    add_column :documents, :upload_id, :string
+    add_column :documents, :upload_id, :integer
     add_column :documents, :vendor, :string
     add_column :documents, :invoice_date, :string
     add_column :documents, :amount, :string
